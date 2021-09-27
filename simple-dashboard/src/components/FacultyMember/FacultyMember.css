@@ -1,0 +1,11 @@
+.facultyMember{
+display: grid;
+grid-template-columns: repeat(3 ,1fr);
+background-color: aliceblue;   
+   
+
+}
+.facultyMember img{
+    width: 20%;
+    border-radius: 100%;
+}
