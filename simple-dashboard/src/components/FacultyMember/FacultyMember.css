@@ -1,7 +1,10 @@
 .facultyMember{
 display: grid;
-grid-template-columns: repeat(3 ,1fr);
-background-color: aliceblue;   
+grid-template-rows: repeat(3 ,1fr);
+grid-gap:.5rem;
+background-color:aquamarine ; 
+height: 340px;
+width: 400px;
    
 
 }

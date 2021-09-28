@@ -14,8 +14,9 @@ const Cart = (props) => {
             <h3>order summery :{props.cart.length}</h3>
             <h3>total :{total}</h3>
             <ul>
+                
                 {
-                    cart.map(mem => <li> mem.name</li>)
+                    cart.map(mem => <li> {mem.name}</li>)
                 }
             </ul>
 

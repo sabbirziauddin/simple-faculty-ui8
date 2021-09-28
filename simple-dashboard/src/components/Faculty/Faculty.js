@@ -23,8 +23,10 @@ const Faculty = () => {
 
     return (
         <div className='faculty'>
+
             <div>
                 <h3>faculty member:{members.length}</h3>
+
                 {
                     members.map(member => <FacultyMember key={member.name} faculty={member}
                         handleFaculty={handleAddtofaculty}></FacultyMember>)
