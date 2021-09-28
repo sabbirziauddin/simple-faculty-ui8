@@ -1,0 +1,14 @@
+.cart{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    
+  
+
+}
+.cart-info{
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}

@@ -1,4 +1,18 @@
 .faculty{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    /* border: 1px solid green; */
+   
+    background-color: beige;
+}
+.facultyMember{
+display: grid;
+/* border: 1px solid red; */
+grid-template-columns: repeat(3 ,1fr);
+grid-gap:.5rem;
+grid-column-gap:1rem;
+ 
+
+   
+
 }

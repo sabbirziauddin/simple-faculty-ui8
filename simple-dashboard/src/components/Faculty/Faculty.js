@@ -26,11 +26,14 @@ const Faculty = () => {
 
             <div>
                 <h3>faculty member:{members.length}</h3>
+                <div className='facultyMember' >
+                    {
+                        members.map(member => <FacultyMember key={member.name} faculty={member}
+                            handleFaculty={handleAddtofaculty}></FacultyMember>)
+                    }
+                </div>
 
-                {
-                    members.map(member => <FacultyMember key={member.name} faculty={member}
-                        handleFaculty={handleAddtofaculty}></FacultyMember>)
-                }
+
 
 
             </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Cart.css'
+
 const Cart = (props) => {
     console.log(props)
     const { cart } = props;
@@ -10,15 +12,18 @@ const Cart = (props) => {
         total = total + member.salary;
     }
     return (
-        <div>
-            <h3>order summery :{props.cart.length}</h3>
-            <h3>total :{total}</h3>
-            <ul>
-                
-                {
-                    cart.map(mem => <li> {mem.name}</li>)
-                }
-            </ul>
+        <div className='cart'>
+            <div className='cart-info'>
+                <h3>Total member :{props.cart.length}</h3>
+                <h3>Total :{total}$</h3>
+                <ul>
+
+                    {
+                        cart.map(mem => <li> {mem.name}</li>)
+                    }
+                </ul>
+            </div>
+
 
 
         </div>

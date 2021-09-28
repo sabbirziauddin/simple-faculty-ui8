@@ -1,32 +1,32 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+
 import './FacultyMember.css'
 
 const FacultyMember = (props) => {
     console.log(props);
     const { name, address, img, Room, salary } = props.faculty;
 
-
+    const element = <FontAwesomeIcon icon={faUser} />;
 
     return (
-        <div>
-            <div className='facultyMember '>
+        <div className='facultyCart'>
+            <img src={img} alt="" />
 
-                <div>
-                    <img src={img} alt="" />
-                </div>
-                <div >
-                    <h3>Name:{name}</h3>
-                    <h3>room:{Room}</h3>
-                    <h3>salary:{salary}</h3>
-                    <p>Address:{address}</p>
-                </div>
-
-
-
-
-
+            <div >
+                <h3>Name:{name}</h3>
+                <h3>room:{Room}</h3>
+                <h3>salary:{salary}$</h3>
+                <h4>Address:{address}</h4>
             </div>
-            <button className='bg btn-primary' onClick={() => props.handleFaculty(props.faculty)}> add Member</button>
+
+
+
+
+
+
+            <button className='btn btn-primary' onClick={() => props.handleFaculty(props.faculty)}>{element} add Member</button>
 
 
         </div>

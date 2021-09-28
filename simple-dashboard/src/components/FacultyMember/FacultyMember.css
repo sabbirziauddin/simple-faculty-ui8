@@ -1,14 +1,17 @@
-.facultyMember{
-display: grid;
-grid-template-rows: repeat(3 ,1fr);
-grid-gap:.5rem;
-background-color:aquamarine ; 
-height: 340px;
-width: 400px;
-   
 
-}
-.facultyMember img{
-    width: 20%;
+.facultyCart img{
+    width: 30%;
     border-radius: 100%;
+    
+}
+.facultyCart{
+    height:30rem;
+    width: 20rem;
+    /* border: 3px solid yellow; */
+    background-color:cadetblue;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
