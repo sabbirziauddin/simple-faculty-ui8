@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 import './Cart.css'
 
@@ -11,6 +13,7 @@ const Cart = (props) => {
         console.log(member);
         total = total + member.salary;
     }
+    const element = <FontAwesomeIcon icon={faUser} />;
     return (
         <div className='cart'>
             <div className='cart-info'>
@@ -19,7 +22,7 @@ const Cart = (props) => {
                 <ul>
 
                     {
-                        cart.map(mem => <li> {mem.name}</li>)
+                        cart.map(mem => <li className='li-style'>{element} {mem.name}</li>)
                     }
                 </ul>
             </div>
